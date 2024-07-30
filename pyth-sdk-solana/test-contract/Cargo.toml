@@ -9,15 +9,15 @@ no-entrypoint = []
 
 [dependencies]
 pyth-sdk-solana = { path = "../", version = "0.10.0" }
-solana-program = "1.18.17"
-bytemuck = "1.7.2"
+solana-program = "1.18.7"
+bytemuck = { version = "1.16.1", features = ["derive", "min_const_generics"]}
 borsh = "0.10.3"
 borsh-derive = "0.10.3"
 
 [dev-dependencies]
-solana-program-test = "1.18.17"
-solana-client = "1.18.17"
-solana-sdk = "1.18.17"
+solana-program-test = "1.18.7"
+solana-client = "1.18.7"
+solana-sdk = "1.18.7"
 
 [lib]
 crate-type = ["cdylib", "lib"]
